@@ -4,11 +4,250 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+ul,
+li,
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* TASK-1 */
+
+#categories {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  max-width: 440px;
+}
+
+.item {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  margin-bottom: 16px;
+}
+
+li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.item li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  outline: 1px solid transparent;
+}
+
+.item li:hover {
+  outline: 1px solid #808080;
+}
+
+/* TASK-2 */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  max-width: 1440px;
+  padding: 10px;
+}
+
+.gallery > li {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.gallery img {
+  height: 300px;
+  object-fit: cover;
+}
+
+/* TASK-3 */
+
+#name-input,
+#name-input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#name-input {
+  padding: 8px 16px;
+  height: 40px;
+  width: 360px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+#name-input:hover,
+#name-input:focus {
+  border: 1px solid #000;
+  outline: none;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  max-width: 360px;
+}
+
+/* TASK-4 */
+
+.login-form,
+.login-form input {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form {
+  row-gap: 8px;
+  width: 408px;
+  padding: 24px;
+}
+
+.login-form input {
+  height: 40px;
+  width: 360px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  outline: none;
+}
+
+.login-form input:hover,
+.login-form input:focus {
+  border: 1px solid #000;
+}
+
+.login-form button {
+  display: block;
+  min-width: 86px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: auto;
+  margin-top: 16px;
+  border: none;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+
+body {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body > p > a,
+body > ul > li > a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ff10f0;
+  text-decoration: none;
+  font-style: normal;
+  padding: 4px;
+}
+
+body a:hover {
+  outline: 2px solid #cefa05;
+  border-radius: 4px;
+}
+
+body > ul > li {
+  margin-bottom: 4px;
+}
+
+/* TASK-5 */
+
+.widget {
+  width: 345px;
+  min-height: 280px;
+  padding: 100px 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+}
+.widget > p {
+  margin-bottom: 16px;
+}
+
+.change-color {
+  display: block;
+  min-width: 148px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: auto;
+  margin-top: 16px;
+  border: none;
+  margin: auto;
+}
+
+.change-color:hover {
+  background-color: #6c8cff;
 }
