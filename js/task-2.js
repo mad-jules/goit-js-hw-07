@@ -34,12 +34,10 @@ const preparedImages = images.map((el) => {
 
   imgElement.setAttribute("src", el.url);
   imgElement.setAttribute("alt", el.alt);
+  imgElement.setAttribute("width", "360");
 
   liElement.append(imgElement);
-  // return `<li><img src='${el.url}' alt='${el.alt}'/>></li>`;
   return liElement;
 });
 
 gallery.append(...preparedImages);
-// console.log(preparedImages);
-// gallery.insertAdjacentHTML("afterbegin", [...preparedImages].join(" "));

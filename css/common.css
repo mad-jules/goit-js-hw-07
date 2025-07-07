@@ -104,8 +104,8 @@ li {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  max-width: 1440px;
-  padding: 10px;
+  max-width: 1128px;
+  margin: 0 auto;
 }
 
 .gallery > li {
@@ -173,7 +173,7 @@ h1 {
 .login-form {
   row-gap: 8px;
   width: 408px;
-  padding: 12px 24px;
+  padding: 12px24px;
 }
 
 .login-form input {
