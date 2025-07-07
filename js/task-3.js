@@ -1,9 +1,7 @@
 const input = document.querySelector("#name-input");
 const nameOutput = document.querySelector("#name-output");
-// console.log(input);
-// console.log(nameOutput);
 
-const onInputInput = (event) => {
+input.addEventListener("input", (event) => {
   const value = event.target.value;
   const trimmedValue = value.trim();
 
@@ -12,6 +10,4 @@ const onInputInput = (event) => {
   } else {
     nameOutput.textContent = trimmedValue;
   }
-};
-
-input.addEventListener("input", onInputInput);
+});
